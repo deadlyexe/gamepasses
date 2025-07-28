@@ -41,7 +41,7 @@ local Tab = Window:CreateTab("KOs", "app-window")
 Tab:CreateSection("")
  
 Tab:CreateButton({
-   Name = "Give 1000 KOs",
+   Name = "Give 1000 KOs (Client)",
    Callback = function()
       local player = game.Players.LocalPlayer -- Or however you get the player
 local leaderstats = player.leaderstats
@@ -50,12 +50,12 @@ KOsValue.Value = KOsValue.Value + 1000
    end,
 })
 
-local Tab = Window:CreateTab("VIP", "app-window")
+local Tab = Window:CreateTab("Gamepasses", "app-window")
 Tab:CreateSection("")
  
 Tab:CreateButton({
-   Name = "VIP",
+   Name = "All Gamepasses",
    Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/deadlyexe/gamepasses/refs/heads/main/script"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/deadlyexe/gamepasses/refs/heads/main/gamepasses"))()
    end,
 })
